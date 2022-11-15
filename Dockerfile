@@ -5,6 +5,7 @@ RUN apk --update --no-cache add nodejs npm python3 py3-pip jq curl bash git dock
 
 COPY --from=golang:alpine /usr/local/go/ /usr/local/go/
 ENV PATH="/usr/local/go/bin:${PATH}"
+ENV JAVA_HOME=/opt/java/openjdk
 
 COPY entrypoint.sh /entrypoint.sh
 
