@@ -2,6 +2,8 @@
 
 set -u
 
+JAVA_HOME=/opt/java/openjdk
+
 function parseInputs(){
 	# Required inputs
 	if [ "${INPUT_CDK_SUBCOMMAND}" == "" ]; then
